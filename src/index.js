@@ -44,10 +44,15 @@ const LineEndingReplacements = {
   replaceCRLF: (string, newEnding) => string.replace(/\r\n/g, `${newEnding}`)
 };
 
+const disableConverter = {
+
+}
+
 module.exports = {
   lf,
   cr,
   crlf,
   LineEndings,
+  disableConverter,
   transformLineEnding
 };
